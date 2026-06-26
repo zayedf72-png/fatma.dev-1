@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 92%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+

@@ -1,0 +1,447 @@
+/* ============================================================
+   RESPONSIVE — Mobile-first overrides for FZ Portfolio
+   Breakpoints: 992px · 768px · 600px · 480px
+   ============================================================ */
+
+/* ─── 992px: Tablet landscape ─────────────────────────────── */
+@media (max-width: 992px) {
+  .container {
+    width: 94%;
+    padding: 0 1.2rem;
+  }
+
+  .hero .container {
+    padding-top: 6.5rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  }
+
+  .proj-card {
+    min-height: 320px;
+  }
+
+  .hero .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-illustration {
+    width: 320px;
+    height: 320px;
+    margin-top: 1rem;
+  }
+
+  .eyebrow, .eyebrow-role, .hero-icons, .typewriter-wrap {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ─── 768px: Tablet portrait ──────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* ── NAV ── */
+  nav {
+    top: 0.75rem;
+    width: calc(100% - 1.2rem);
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  /* Hide text labels in nav on smaller screens, keep icons */
+  .nav-links a span,
+  .resume-link span {
+    display: none;
+  }
+
+  .nav-link-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ── HERO ── */
+  .hero .container {
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+    min-height: auto;
+  }
+
+  .hero-inner {
+    max-width: 100%;
+  }
+
+  .hero-name {
+    font-size: clamp(2.4rem, 9vw, 3.5rem);
+    margin-bottom: 0.9rem;
+  }
+
+  .typewriter-wrap {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin-bottom: 1.3rem;
+    min-height: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.83rem;
+    max-width: 100%;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-icons {
+    gap: 0.65rem;
+  }
+
+  .hero-icon {
+    padding: 0.55rem;
+  }
+
+  .hero-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* ── TECH TICKER ── */
+  .ticker-wrap {
+    margin-top: 1.5rem;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  /* ── PROJECTS ── */
+  .proj-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    margin-top: 1.2rem;
+  }
+
+  .proj-card {
+    min-height: auto;
+    padding: 1.4rem 1.4rem 1.2rem;
+  }
+
+  .proj-title {
+    font-size: 1.1rem;
+  }
+
+  .proj-desc {
+    font-size: 0.78rem;
+  }
+
+  /* ── ABOUT TABS ── */
+  .about-tabs {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.4rem;
+    font-size: 0.68rem;
+    border-radius: 8px;
+  }
+
+  /* ── CONTACT ── */
+  .contact-big {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .contact-p {
+    font-size: 0.85rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .contact-text {
+    font-size: 0.78rem;
+  }
+
+  /* ── FOOTER ── */
+  .footer-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+/* ─── 600px: Large phone ───────────────────────────────────── */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 1.1rem;
+  }
+
+  /* ── NAV ── */
+  nav {
+    border-radius: 12px;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+  }
+
+  /* ── HERO ── */
+  .eyebrow-text {
+    font-size: 0.6rem;
+  }
+
+  .eyebrow-role {
+    font-size: 0.65rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 10.5vw, 3rem);
+  }
+
+  .hero-illustration {
+    width: 260px;
+    height: 260px;
+  }
+
+  .typewriter-wrap {
+    font-size: clamp(0.95rem, 4.5vw, 1.2rem);
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  /* ── PROJECTS ── */
+  .proj-title {
+    font-size: 1.05rem;
+  }
+
+  .proj-card {
+    padding: 1.2rem 1.2rem 1rem;
+    border-radius: 12px;
+  }
+
+  .proj-actions {
+    gap: 0.5rem;
+  }
+
+  .btn-demo,
+  .btn-github {
+    font-size: 0.65rem;
+    padding: 0.55rem 0.8rem;
+  }
+
+  /* ── ABOUT TABS ── */
+  .tab-btn {
+    font-size: 0.65rem;
+    padding: 0.44rem 0.35rem;
+    letter-spacing: 0.02em;
+  }
+
+  .tab-card {
+    padding: 1rem 1.1rem;
+  }
+
+  .card-title {
+    font-size: 0.88rem;
+  }
+
+  .card-sub {
+    font-size: 0.72rem;
+  }
+
+  /* ── CERTIFICATIONS ── */
+  .cert-card {
+    border-radius: 10px;
+  }
+
+  .cert-title {
+    font-size: 0.8rem;
+  }
+
+  /* ── CONTACT ── */
+  .contact-big {
+    font-size: 1.9rem;
+  }
+
+  .contact-icon-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 8px;
+  }
+
+  .contact-icon-box svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact-text {
+    font-size: 0.73rem;
+  }
+
+  /* ── TICKER ── */
+  .t-item {
+    font-size: 0.82rem;
+    padding: 0 1.3rem;
+    gap: 0.55rem;
+  }
+
+  .skill-svg-logo,
+  .skill-cdn-logo {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ─── 480px: Small phone ───────────────────────────────────── */
+@media (max-width: 480px) {
+  /* ── NAV ── */
+  nav {
+    top: 0.6rem;
+    width: calc(100% - 1rem);
+    padding: 0.4rem 0.75rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.55rem;
+  }
+
+  /* ── HERO ── */
+  .hero .container {
+    padding-top: 4.8rem;
+  }
+
+  .hero-name {
+    font-size: clamp(1.8rem, 11vw, 2.6rem);
+    letter-spacing: -0.01em;
+  }
+
+  .typewriter-wrap {
+    font-size: clamp(0.88rem, 5vw, 1.1rem);
+    min-height: 2rem;
+  }
+
+  .tw-prefix {
+    font-size: 0.72rem;
+    margin-right: 0.35rem;
+  }
+
+  .subtitle {
+    font-size: 0.76rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 2.8rem 0;
+  }
+
+  .sec-label {
+    font-size: 0.62rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  /* ── PROJECTS ── */
+  .proj-card {
+    padding: 1.1rem 1rem 0.9rem;
+    border-radius: 10px;
+  }
+
+  .proj-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-desc {
+    font-size: 0.74rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .proj-stack {
+    margin-bottom: 1rem;
+  }
+
+  .btn-demo,
+  .btn-github {
+    font-size: 0.62rem;
+    padding: 0.5rem 0.65rem;
+    border-radius: 6px;
+  }
+
+  /* ── ABOUT TABS ── */
+  .about-tabs {
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .tab-btn {
+    font-size: 0.62rem;
+    padding: 0.42rem 0.28rem;
+  }
+
+  /* ── CERTIFICATIONS ── */
+  .cert-body {
+    padding: 0.85rem;
+  }
+
+  /* ── CONTACT ── */
+  .contact-big {
+    font-size: 1.65rem;
+  }
+
+  .contact-p {
+    font-size: 0.78rem;
+  }
+
+  .contact-item {
+    gap: 0.85rem;
+  }
+
+  .contact-text {
+    font-size: 0.68rem;
+  }
+
+  /* ── FOOTER ── */
+  .footer-text {
+    font-size: 0.65rem;
+  }
+
+  .footer-links a {
+    font-size: 0.62rem;
+  }
+}

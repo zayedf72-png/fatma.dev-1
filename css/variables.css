@@ -1,0 +1,11 @@
+:root {
+  --bg: #02050F;
+  --bg2: #060C1A;
+  --bg3: #0A1325;
+  --blue: #4A90D9;
+  --blue-light: #7EB8F7;
+  --text: #E8EFF8;
+  --muted: #6B87A8;
+  --border: rgba(74, 144, 217, 0.15);
+  --border2: rgba(74, 144, 217, 0.08);
+}
