@@ -48,34 +48,6 @@
 /* ─── 768px: Tablet portrait ──────────────────────────────── */
 @media (max-width: 768px) {
 
-  /* ── NAV ── */
-  nav {
-    top: 0.75rem;
-    width: calc(100% - 1.2rem);
-    padding: 0.5rem 1rem;
-    border-radius: 14px;
-  }
-
-  .logo {
-    font-size: 1.1rem;
-  }
-
-  .nav-links {
-    gap: 1rem;
-    margin: 0 0.5rem;
-  }
-
-  /* Hide text labels in nav on smaller screens, keep icons */
-  .nav-links a span,
-  .resume-link span {
-    display: none;
-  }
-
-  .nav-link-icon {
-    width: 16px;
-    height: 16px;
-  }
-
   /* ── HERO ── */
   .hero .container {
     padding-top: 5.5rem;
@@ -200,16 +172,6 @@
     padding: 0 1.1rem;
   }
 
-  /* ── NAV ── */
-  nav {
-    border-radius: 12px;
-    padding: 0.45rem 0.85rem;
-  }
-
-  .nav-links {
-    gap: 0.75rem;
-  }
-
   /* ── HERO ── */
   .eyebrow-text {
     font-size: 0.6rem;
@@ -322,21 +284,6 @@
 
 /* ─── 480px: Small phone ───────────────────────────────────── */
 @media (max-width: 480px) {
-  /* ── NAV ── */
-  nav {
-    top: 0.6rem;
-    width: calc(100% - 1rem);
-    padding: 0.4rem 0.75rem;
-  }
-
-  .logo {
-    font-size: 1rem;
-  }
-
-  .nav-links {
-    gap: 0.55rem;
-  }
-
   /* ── HERO ── */
   .hero .container {
     padding-top: 4.8rem;
