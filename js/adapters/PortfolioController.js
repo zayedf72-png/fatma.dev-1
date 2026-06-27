@@ -42,15 +42,25 @@ export class PortfolioController {
 
     // 2. Nav links click handler
     const navLinks = document.querySelectorAll('nav .nav-links a');
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
-        e.preventDefault();
         const targetType = link.getAttribute('data-scroll');
         if (!targetType) return;
+        
+        e.preventDefault();
 
         // Set clicked link as active immediately
         navLinks.forEach(b => b.classList.remove('active'));
         link.classList.add('active');
+
+        // Close mobile menu if open
+        if (navToggle && navLinksContainer) {
+          navToggle.classList.remove('active');
+          navLinksContainer.classList.remove('active');
+        }
 
         if (targetType === 'experience' || targetType === 'education' || targetType === 'certifications') {
           // Auto select tab
@@ -76,6 +86,23 @@ export class PortfolioController {
         }
       });
     });
+
+    // 3. Hamburger menu toggle
+    if (navToggle && navLinksContainer) {
+      navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navToggle.classList.toggle('active');
+        navLinksContainer.classList.toggle('active');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (navLinksContainer.classList.contains('active') && !navLinksContainer.contains(e.target) && e.target !== navToggle) {
+          navToggle.classList.remove('active');
+          navLinksContainer.classList.remove('active');
+        }
+      });
+    }
   }
 
   /**
