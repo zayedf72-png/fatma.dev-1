@@ -5,13 +5,13 @@ import {
   certificationsList,
   projectsList,
   tickerSkills
-} from './data/portfolioData.js?v=1.42';
+} from './data/portfolioData.js';
 
-import { Typewriter } from '../domain/Typewriter.js?v=1.42';
-import { TypewriterInteractor } from '../usecases/TypewriterInteractor.js?v=1.42';
-import { TypewriterPresenter } from '../adapters/TypewriterPresenter.js?v=1.42';
-import { PortfolioPresenter } from '../adapters/PortfolioPresenter.js?v=1.42';
-import { PortfolioController } from '../adapters/PortfolioController.js?v=1.42';
+import { Typewriter } from '../domain/Typewriter.js';
+import { TypewriterInteractor } from '../usecases/TypewriterInteractor.js';
+import { TypewriterPresenter } from '../adapters/TypewriterPresenter.js';
+import { PortfolioPresenter } from '../adapters/PortfolioPresenter.js';
+import { PortfolioController } from '../adapters/PortfolioController.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Instantiation and rendering of dynamic lists (Framework & Presenter bindings)
